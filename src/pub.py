@@ -1,5 +1,11 @@
 class Pub:
     
-    def __init__(self, name, total_cash):
+    def __init__(self, name, till): # constructor function
         self.name = name 
-        self.total_cash = total_cash
+        self.till = till
+        self.drinks = []
+
+    def increase_money_till(self, drink):
+        self.till += drink
+
+    
